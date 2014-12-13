@@ -5,13 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>gocd.plugin.materials</groupId>
-    <artifactId>s3material</artifactId>
+    <artifactId>s3material-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <scala.version>2.10.3</scala.version>
         <scala.dep.version>2.10</scala.dep.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.thoughtworks.go</groupId>
+            <artifactId>go-plugin-api</artifactId>
+            <version>14.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
